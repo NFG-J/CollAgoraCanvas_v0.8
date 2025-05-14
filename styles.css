@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.draggable {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.draggable.note {
+    background-color: lightyellow;
+}
+
+input[type="color"], input[type="file"] {
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.canvas {
+    width: 90%;
+    height: 700px;
+    border: 2px dashed #ccc;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+.canvas-item {
+    position: absolute;
+    cursor: move;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 150px;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+
+.canvas-item[contenteditable="true"] {
+    outline: none;
+    cursor: text;
+    min-width: 50px;
+    min-height: 20px;
+}
+
+.canvas-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: grab;
+}
+

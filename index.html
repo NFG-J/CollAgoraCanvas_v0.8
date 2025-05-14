@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<div class="toolbar">
+    <div class="draggable text" draggable="true">Text</div>
+    <div class="draggable note" draggable="true">Note</div>
+    <input type="file" id="imageUpload" accept="image/*">
+    <label for="bgColorPicker">Background Color:</label>
+    <input type="color" id="bgColorPicker">
+    <input type="file" id="bgImageUpload" accept="image/*">
+</div>
+<div class="buttons">
+    <button id="saveButton">Save</button>
+    <button id="loadButton">Load</button>
+    <button id="exportHtml">Export as HTML</button>
+</div>
+<div class="canvas" id="canvas"></div>
+<script src="script.js"></script>
+</body>
+</html>
+
