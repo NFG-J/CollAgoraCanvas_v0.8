@@ -1,0 +1,17 @@
+{
+  "name": "collagoracanvas_v0.8",
+  "version": "1.0.0",
+  "description": "(At present) an un-finished electronic workspace for e. g. putting virtual sticker-notes on casnvases like the TBL CC (see  e.g., https://www.sciencedirect.com/science/article/pii/S1877050924014212 )",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jsdom": "^22.0.0"
+  }
+}
