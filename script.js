@@ -70,8 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const type = e.dataTransfer.getData('type');
         if (type) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
             createCanvasItem(type, type === 'text' ? 'Editable Text' : 'Sticky Note',
-                `${e.clientX - canvas.offsetLeft}px`, `${e.clientY - canvas.offsetTop}px`);
+                `${x}px`, `${y}px`);
         }
     });
 
