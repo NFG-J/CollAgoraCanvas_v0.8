@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.appendChild(element);
     }
 
+    // Expose for testing
+    window.createCanvasItem = createCanvasItem;
+
     draggables.forEach(draggable => {
         draggable.addEventListener('dragstart', (e) => {
             e.dataTransfer.setData('type', draggable.classList[1]);
